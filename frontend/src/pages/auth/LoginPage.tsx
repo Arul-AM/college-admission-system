@@ -123,7 +123,7 @@ const LoginPage: React.FC = () => {
         </div>
 
         <p className="text-center text-blue-200 text-sm mt-6">
-          © 2024 College Admission Management System
+          © 2026 College Admission Management System
         </p>
       </div>
     </div>
