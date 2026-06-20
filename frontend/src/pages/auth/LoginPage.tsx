@@ -6,10 +6,13 @@ import { login } from '../../services/api';
 import { getErrorMessage } from '../../utils';
 
 const DEMO_USERS = [
-  { label: 'Admin', icon: '⚡', un: 'admin', pw: 'Admin@123', color: 'from-violet-500 to-purple-600' },
-  { label: 'Stage 1', icon: '🚪', un: 'staff1', pw: 'Staff@123', color: 'from-blue-500 to-cyan-500' },
-  { label: 'Stage 5', icon: '✅', un: 'staff5', pw: 'Staff@123', color: 'from-emerald-500 to-teal-500' },
-  { label: 'Help Desk', icon: '🎧', un: 'staff6', pw: 'Staff@123', color: 'from-orange-400 to-rose-500' },
+  { label: 'Admin',     icon: '⚡', un: 'admin',  pw: 'Admin@123',  color: 'from-violet-500 to-purple-600' },
+  { label: 'Stage 1',  icon: '🚪', un: 'staff1', pw: 'Staff@123',  color: 'from-blue-500 to-cyan-500' },
+  { label: 'Stage 2',  icon: '📋', un: 'staff2', pw: 'Staff@123',  color: 'from-sky-500 to-blue-600' },
+  { label: 'Stage 3',  icon: '🔍', un: 'staff3', pw: 'Staff@123',  color: 'from-indigo-400 to-blue-500' },
+  { label: 'Stage 4',  icon: '📝', un: 'staff4', pw: 'Staff@123',  color: 'from-cyan-500 to-teal-500' },
+  { label: 'Stage 5',  icon: '✅', un: 'staff5', pw: 'Staff@123',  color: 'from-emerald-500 to-teal-500' },
+  { label: 'Help Desk',icon: '🎧', un: 'staff6', pw: 'Staff@123',  color: 'from-orange-400 to-rose-500' },
 ];
 
 /* Floating dot component */
@@ -291,7 +294,7 @@ const LoginPage: React.FC = () => {
           </div>
 
           {/* Demo credentials */}
-          <div className={`grid grid-cols-2 gap-2.5 ${mounted ? 'fade-up-4' : 'opacity-0'}`}>
+          <div className={`grid grid-cols-3 gap-2 ${mounted ? 'fade-up-4' : 'opacity-0'}`}>
             {DEMO_USERS.map(c => (
               <button
                 key={c.un}
