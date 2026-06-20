@@ -6,7 +6,7 @@ import { login } from '../../services/api';
 import { getErrorMessage } from '../../utils';
 
 const DEMO_USERS = [
-  { label: 'Admin',     icon: '⚡', un: 'admin',  pw: 'Admin@123',  color: 'from-violet-500 to-purple-600' },
+  
   { label: 'Stage 1',  icon: '🚪', un: 'staff1', pw: 'Staff@123',  color: 'from-blue-500 to-cyan-500' },
   { label: 'Stage 2',  icon: '📋', un: 'staff2', pw: 'Staff@123',  color: 'from-sky-500 to-blue-600' },
   { label: 'Stage 3',  icon: '🔍', un: 'staff3', pw: 'Staff@123',  color: 'from-indigo-400 to-blue-500' },
